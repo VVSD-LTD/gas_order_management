@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-11 14:26:21.504115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "order_date",
+  "customer",
+  "customer_name",
+  "po_box_no",
+  "column_break_6",
+  "mob_no",
+  "tel_residence",
+  "tel_office",
+  "email",
+  "section_break_11",
+  "floor_no",
+  "plot_no",
+  "block_no",
+  "building_name",
+  "column_break_16",
+  "street_name",
+  "area",
+  "land_mark",
+  "section_break_20",
+  "order_utility_detail",
+  "section_break_22",
+  "comment",
+  "column_break_24",
+  "staff_name",
+  "order_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Order Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.po_box_no",
+   "fieldname": "po_box_no",
+   "fieldtype": "Data",
+   "label": "P.O. Box No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.mob_no",
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "label": "Mob No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.tel_residence",
+   "fieldname": "tel_residence",
+   "fieldtype": "Data",
+   "label": "Tel Residence",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.tel_office",
+   "fieldname": "tel_office",
+   "fieldtype": "Data",
+   "label": "Tel Office",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "customer.floor_no",
+   "fieldname": "floor_no",
+   "fieldtype": "Data",
+   "label": "Floor No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.plot_no",
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.block_no",
+   "fieldname": "block_no",
+   "fieldtype": "Data",
+   "label": "Block No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.building_name",
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.street_name",
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.area",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.land_mark",
+   "fieldname": "land_mark",
+   "fieldtype": "Small Text",
+   "label": "Land Mark",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_utility_detail",
+   "fieldtype": "Table",
+   "label": "Order Utility Detail",
+   "options": "Utility Sales Order Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staff Name",
+   "options": "Staff",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Pending",
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Status",
+   "options": "Pending\nDelivery in Progress\nDelivered",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Utility Sales Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "O-",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-12 07:29:11.628008",
+ "modified_by": "Administrator",
+ "module": "Gas Order Management",
+ "name": "Utility Sales Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-11 13:53:35.448817",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "utility_type",
+  "utility_size"
+ ],
+ "fields": [
+  {
+   "fieldname": "utility_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utility Type",
+   "options": "Utility Type"
+  },
+  {
+   "fieldname": "utility_size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utility Size",
+   "options": "Utility Size"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-12 06:55:36.309551",
+ "modified_by": "Administrator",
+ "module": "Gas Order Management",
+ "name": "Customer Utility",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

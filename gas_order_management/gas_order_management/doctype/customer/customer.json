@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series",
+ "creation": "2022-11-11 14:02:48.982397",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer_name",
+  "po_box_no",
+  "tel_residence",
+  "column_break_4",
+  "tel_office",
+  "mob_no",
+  "email",
+  "section_break_9",
+  "floor_no",
+  "plot_no",
+  "block_no",
+  "building_name",
+  "column_break_14",
+  "street_name",
+  "area",
+  "land_mark",
+  "geolocation_18",
+  "section_break_19",
+  "customer_utility_detail"
+ ],
+ "fields": [
+  {
+   "default": "C-####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "po_box_no",
+   "fieldtype": "Data",
+   "label": "P.O. Box No"
+  },
+  {
+   "fieldname": "tel_residence",
+   "fieldtype": "Data",
+   "label": "Tel Residence"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tel_office",
+   "fieldtype": "Data",
+   "label": "Tel Office"
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "label": "Mob No"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "floor_no",
+   "fieldtype": "Data",
+   "label": "Floor No"
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "block_no",
+   "fieldtype": "Data",
+   "label": "Block No"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "land_mark",
+   "fieldtype": "Small Text",
+   "label": "Land Mark"
+  },
+  {
+   "fieldname": "geolocation_18",
+   "fieldtype": "Geolocation",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_utility_detail",
+   "fieldtype": "Table",
+   "label": "Customer Utility Detail",
+   "options": "Customer Utility"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-12 07:25:17.881665",
+ "modified_by": "Administrator",
+ "module": "Gas Order Management",
+ "name": "Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "customer_name, mob_no, building_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
