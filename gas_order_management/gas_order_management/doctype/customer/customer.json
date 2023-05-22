@@ -24,7 +24,6 @@
   "street_name",
   "area",
   "land_mark",
-  "geolocation_18",
   "section_break_19",
   "customer_utility_detail"
  ],
@@ -114,11 +113,6 @@
    "label": "Land Mark"
   },
   {
-   "fieldname": "geolocation_18",
-   "fieldtype": "Geolocation",
-   "hidden": 1
-  },
-  {
    "fieldname": "section_break_19",
    "fieldtype": "Section Break"
   },
@@ -131,10 +125,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-12 07:25:17.881665",
+ "modified": "2023-05-16 08:04:10.019919",
  "modified_by": "Administrator",
  "module": "Gas Order Management",
  "name": "Customer",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -153,5 +148,6 @@
  "search_fields": "customer_name, mob_no, building_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

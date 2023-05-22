@@ -27,6 +27,7 @@
   "area",
   "land_mark",
   "section_break_20",
+  "reload_items",
   "order_utility_detail",
   "section_break_22",
   "comment",
@@ -214,15 +215,22 @@
    "label": "Naming Series",
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.customer && doc.docstatus == 0",
+   "fieldname": "reload_items",
+   "fieldtype": "Button",
+   "label": "Reload Items"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-12 07:29:11.628008",
+ "modified": "2023-05-15 09:58:33.988045",
  "modified_by": "Administrator",
  "module": "Gas Order Management",
  "name": "Utility Sales Order",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -240,5 +248,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
